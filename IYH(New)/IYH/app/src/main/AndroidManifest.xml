@@ -61,6 +61,19 @@
         <meta-data android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/app_id" />
 
+        <!--  Login Activity -->
+        <activity
+            android:label="Login Account"
+            android:name=".LoginActivity"></activity>
+
+        <!--  Register Activity -->
+        <activity
+            android:label="Register New Account"
+            android:name=".RegisterActivity"></activity>
+
+    <!-- Allow to connect with internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     </application>
 
 </manifest>

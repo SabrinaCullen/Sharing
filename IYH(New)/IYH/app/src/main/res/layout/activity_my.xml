@@ -26,7 +26,7 @@
         android:inputType="textPersonName"
         android:text="Name"
         android:ems="10"
-        android:id="@+id/editText"
+        android:id="@+id/username"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:background="#4bffa1fb" />
@@ -36,11 +36,11 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/editText2"
+        android:id="@+id/fullName"
         android:text="password"
         android:selectAllOnFocus="false"
         android:background="#4bffa1fb"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/username"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp" />
 
@@ -49,15 +49,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="    Login    "
-        android:id="@+id/b_login"
+        android:id="@+id/btnLogin"
         android:onClick="login"
         android:textColor="#ffffffff"
         android:textStyle="italic"
         android:background="#97ff139c"
         android:textSize="16sp"
-        android:layout_below="@+id/editText2"
-        android:layout_alignLeft="@+id/editText2"
-        android:layout_alignStart="@+id/editText2" />
+        android:layout_below="@+id/fullName"
+        android:layout_alignLeft="@+id/fullName"
+        android:layout_alignStart="@+id/fullName"
+        android:clickable="false" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -70,9 +71,9 @@
         android:background="#97ff139c"
         android:textSize="16sp"
         android:textStyle="italic"
-        android:layout_alignTop="@+id/b_login"
-        android:layout_alignRight="@+id/editText2"
-        android:layout_alignEnd="@+id/editText2" />
+        android:layout_alignTop="@+id/btnLogin"
+        android:layout_alignRight="@+id/fullName"
+        android:layout_alignEnd="@+id/fullName" />
 
     <com.facebook.widget.LoginButton
         android:id="@+id/login_button"
@@ -94,7 +95,14 @@
         android:textColor="#ffffffff"
         android:background="#ff33e7ff"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/b_login"
+        android:layout_alignLeft="@+id/btnLogin"
         android:layout_alignRight="@+id/b_signup" />
+
+    <TextView android:id="@+id/login_error"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#e30000"
+        android:padding="10dip"
+        android:textStyle="bold"/>
 
 </RelativeLayout>
