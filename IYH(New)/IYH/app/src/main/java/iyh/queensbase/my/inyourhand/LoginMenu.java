@@ -8,11 +8,11 @@ import android.view.View;
 
 public class LoginMenu extends Activity {
 
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_menu);
-//    }
+ @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_menu);
+   }
 
     public void editProfile(View view)
     {

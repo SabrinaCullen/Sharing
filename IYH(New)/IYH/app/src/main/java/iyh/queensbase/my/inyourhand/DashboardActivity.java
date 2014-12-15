@@ -23,7 +23,7 @@ public class DashboardActivity extends Activity {
         // Check login status in database
         userFunctions = new UserFunctions();
         if(userFunctions.isUserLoggedIn(getApplicationContext())){
-        	setContentView(R.layout.activity_menu);
+        	setContentView(R.layout.activity_create_campaign);
         	btnLogout = (Button) findViewById(R.id.btnLogout);
         	
         	btnLogout.setOnClickListener(new View.OnClickListener() {
