@@ -31,6 +31,7 @@ public class JSONParser {
 	}
 
 	public JSONObject getJSONFromUrl(String url, List<NameValuePair> params) {
+        Log.d("TEST", "json: " + json);
 
 		// Making HTTP request
 		try {
