@@ -2,29 +2,21 @@ package iyh.queensbase.my.inyourhand;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.StrictMode;
-import android.util.Base64;
 import android.util.Log;
-import android.view.Menu;
 import android.view.View;
-import android.os.StrictMode;
-
-import com.facebook.Request;
-import com.facebook.Response;
+import android.widget.Button;
 import com.facebook.Session;
 import com.facebook.SessionState;
 import com.facebook.UiLifecycleHelper;
 import com.facebook.model.GraphUser;
 import com.facebook.widget.LoginButton;
 
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
 
 public class MyActivity extends Activity {
 
+    Button btnLogin;
     private UiLifecycleHelper uiHelper;
 
     @Override
@@ -59,10 +51,9 @@ public class MyActivity extends Activity {
 
 
 
-
     }
 
-    public void login(View view)
+    public void btnLogin(View view)
     {
         Intent i = new Intent(MyActivity.this, LoginMenu.class);
         startActivity(i);
@@ -115,5 +106,6 @@ public class MyActivity extends Activity {
             }
         }
     };
+
 
 }

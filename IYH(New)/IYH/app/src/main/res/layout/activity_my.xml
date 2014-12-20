@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:text="    Login    "
         android:id="@+id/btnLogin"
-        android:onClick="login"
+        android:onClick="btnLogin"
         android:textColor="#ffffffff"
         android:textStyle="italic"
         android:background="#97ff139c"
